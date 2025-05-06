@@ -1,0 +1,64 @@
+.d-none {
+    display: none;
+}
+
+fieldset {
+    border: 10px double var(--lineColor);
+    padding: 15px;
+}
+
+form {
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--lineColor);
+    caret-color: var(--lineColor);
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.terminalFont {
+    background-image: url('../../imgs/texture.png');
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+
+.inputLabel {
+    font-size: 2rem;
+    font-family: var(--terminalFont);
+}
+
+.terminalBtn {
+    background-color: transparent;
+    border: 3px double var(--lineColor);
+    font-size: 2rem;
+    font-family: var(--terminalFont);
+
+    cursor: pointer;
+}
+
+.terminalBtn:hover{
+    background-clip: padding-box;
+    background-color: var(--lineColor);
+    -webkit-text-fill-color: black;
+}
+

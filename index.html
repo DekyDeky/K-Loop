@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Loop Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/terminal/login.css">
+    <link rel="stylesheet" href="styles/terminal/Terminal.css">
+</head>
+<body>
+    <fieldset class="loginField" id="loginField">
+        <legend class="form-title terminalFont"> K-Loop Login </legend>
+        <form action="">
+            <div class="inputDiv">
+                <label for="login" class="terminalFont inputLabel">Login: </label>
+                <input name="login" type="text" class="inputText terminalFont inputLabel">
+            </div>
+            <div class="inputDiv">
+                <label for="password" class="terminalFont inputLabel">Password: </label>
+                <input name="password" type="password" class="inputText terminalFont inputLabel">
+            </div>
+            <button class="terminalBtn terminalFont" type="submit">Entrar</button>
+            <a class="criarConta terminalFont" id="criarConta">Criar uma conta</a>
+        </form>
+    </fieldset>
+
+    <fieldset class="registerField d-none" id="registerField">
+        <legend class="form-title terminalFont"> K-Loop Register </legend>
+        <form action="">
+            <div class="inputDiv">
+                <label for="email" class="terminalFont inputLabel">Email: </label>
+                <input name="email" type="text" class="inputText terminalFont inputLabel">
+            </div>
+            <div class="inputDiv">
+                <label for="login" class="terminalFont inputLabel">Login: </label>
+                <input name="login" type="text" class="inputText terminalFont inputLabel">
+            </div>
+            <div class="inputDiv">
+                <label for="password" class="terminalFont inputLabel">Password: </label>
+                <input name="password" type="password" class="inputText terminalFont inputLabel">
+            </div>
+            <button class="terminalBtn terminalFont" type="submit">Registrar</button>
+            <a class="logar terminalFont" id="irLogar">Já tenho uma conta</a>
+        </form>
+    </fieldset>
+
+    <script src="js/terminal/toRegisterLogin.js"></script>
+</body>
+</html>
